@@ -1,0 +1,11 @@
+.chat-message {
+    height: calc(100vh - 3rem);
+    overflow-y: hidden;
+
+    .chat-threads {
+        height: calc(100vh - 3rem);
+        overflow-y: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}

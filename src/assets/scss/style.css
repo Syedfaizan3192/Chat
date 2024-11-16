@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.lh-0-ls-5 {
+  line-height: unset !important;
+  letter-spacing: 5px;
+}
+
+.color-dark {
+  color: #000000;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.italic-tag-line {
+  font-size: 12px;
+  color: #9C8B58;
+  font-weight: 900;
+}
+
+.thread-box {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 345px;
+}
+.thread-box:hover {
+  background-color: #85ABDB;
+}
+.thread-box .profile-image img {
+  width: 40px;
+  height: 40px;
+}
+.thread-box .profile-image .profile-detail h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.thread-box .profile-image .profile-detail p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.thread-box .profile-content p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #7C7C7C;
+}
+
+.chat-inbox {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  height: calc(100vh - 3rem);
+}
+.chat-inbox .top-header {
+  max-width: 100% !important;
+  background-color: #85ABDB;
+}
+.chat-inbox .chats {
+  height: calc(100% - 119.3px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.chat-inbox .input-submit {
+  position: relative;
+}
+.chat-inbox .input-submit .form-control {
+  box-shadow: none;
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.chat-inbox .input-submit .form-control:hover, .chat-inbox .input-submit .form-control:focus, .chat-inbox .input-submit .form-control:focus-visible, .chat-inbox .input-submit .form-control:focus-within, .chat-inbox .input-submit .form-control:active {
+  box-shadow: none;
+}
+.chat-inbox .input-submit .send {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 7px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+
+.recieve-message {
+  display: inline-block;
+  /* Allows the width to adapt to the content */
+  max-width: 582px;
+  /* Maximum width the message can take */
+  min-width: 50px;
+  /* Minimum width to maintain a consistent look for short messages */
+  padding: 10px 15px;
+  /* Add padding for better spacing */
+  background: #E7E7E7;
+  border-radius: 25px;
+  word-wrap: break-word;
+  /* Ensure long words or URLs wrap properly */
+  white-space: pre-wrap;
+  /* Preserve white spaces and line breaks in the message */
+}
+
+.send-message {
+  display: inline-block;
+  /* Allows the width to adapt to the content */
+  max-width: 582px;
+  /* Maximum width the message can take */
+  min-width: 50px;
+  /* Minimum width to maintain a consistent look for short messages */
+  padding: 10px 15px;
+  /* Add padding for better spacing */
+  background: #C4DEE1;
+  border-radius: 25px;
+  word-wrap: break-word;
+  /* Ensure long words or URLs wrap properly */
+  white-space: pre-wrap;
+  /* Preserve white spaces and line breaks in the message */
+}
+
+.chat-message {
+  height: calc(100vh - 3rem);
+  overflow-y: hidden;
+}
+.chat-message .chat-threads {
+  height: calc(100vh - 3rem);
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}/*# sourceMappingURL=style.css.map */
